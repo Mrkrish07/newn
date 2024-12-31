@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy New Year 2025</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #1e90ff, #ff4500);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        transform: none;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        overflow: visible;
+        height: auto;
+        width: 90%; /* Ensure container width is limited */
+      }
+
+      .container:hover {
+        transform: rotateY(10deg) rotateX(-5deg);
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+      }
+
+      h1 {
+        font-size: 5vw; /* Adjust font size based on viewport width */
+        color: #ffffff;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        position: relative;
+        line-height: 1.2;
+        margin: 0;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #ffffff;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+      }
+
+      .footer {
+        font-size: 1rem;
+        color: #d1d1e9;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #ff4500;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s ease, transform 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .btn:hover {
+        background: #1e90ff;
+        transform: scale(1.1);
+      }
+
+      /* Balloon Animation */
+      .balloon {
+        position: absolute;
+        bottom: -150px;
+        background: radial-gradient(circle at 50% 50%, #ff4500, #d2691e);
+        width: 50px;
+        height: 70px;
+        border-radius: 50%;
+        animation: float 6s ease-in-out infinite;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .balloon::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        width: 2px;
+        height: 20px;
+        background: #000;
+        transform: translateX(-50%);
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0) translateX(0);
+        }
+        50% {
+          transform: translateY(-200px) translateX(30px);
+        }
+        100% {
+          transform: translateY(0) translateX(0);
+        }
+      }
+
+      /* Add Emoji Animations */
+      .emoji {
+        font-size: 2rem;
+        position: absolute;
+        animation: emojiFloat 4s ease-in-out infinite;
+      }
+
+      @keyframes emojiFloat {
+        0% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        50% {
+          transform: translateY(-100px);
+          opacity: 0.7;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .emoji:nth-child(odd) {
+        animation-duration: 5s;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 8vw; /* More responsive font size for mobile devices */
+        }
+
+        p {
+          font-size: 0.9rem; /* Adjust paragraph font size */
+          padding: 10px;
+        }
+
+        .btn {
+          font-size: 0.9rem; /* Smaller button text */
+          padding: 8px 16px;
+        }
+
+        .balloon {
+          width: 40px;
+          height: 60px;
+        }
+
+        .emoji {
+          font-size: 1.5rem; /* Adjust emoji size */
+        }
+      }
+
+      /* Very Small Screens */
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 12vw; /* Even smaller font size on tiny screens */
+        }
+
+        .btn {
+          padding: 6px 12px; /* Smaller button on tiny screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎉 Happy New Year 2025 🎊</h1>
+      <p>
+        "Dear Friends, As we bid farewell to the past year and embrace the new
+        one, I wanted to take a moment to reflect on the incredible journey
+        we've had together so far. Each of you has contributed to making this
+        year memorable with your unique perspectives, unwavering support, and
+        dedication to our collective growth. The experiences we've shared, both
+        academically and personally, have been enriching and have strengthened
+        our bond as a group. As we step into this new year, I hope it brings us
+        more opportunities for growth, success, and meaningful moments. May we
+        continue to push each other toward greater achievements, while also
+        finding balance and joy in the journey. Here's to embracing new
+        challenges, learning from every experience, and striving to make a
+        positive impact in all that we do. Let this year be another chapter of
+        personal and professional progress, filled with moments of growth,
+        achievement, and fulfillment. Wishing each one of you a very Happy New
+        Year, filled with prosperity, health, and happiness. Let's make it a
+        year to remember! Warm regards, Krish Upadhyay🎈✨
+      </p>
+      <a href="#" class="btn">Best Wishes</a>
+      <div class="footer">~ From K ~</div>
+    </div>
+
+    <!-- Balloons -->
+    <div class="balloon" style="left: 10%; animation-delay: 0s"></div>
+    <div class="balloon" style="left: 50%; animation-delay: 2s"></div>
+    <div class="balloon" style="left: 90%; animation-delay: 4s"></div>
+
+    <!-- Emojis -->
+    <div class="emoji" style="left: 20%; animation-delay: 1s">🎈</div>
+    <div class="emoji" style="left: 60%; animation-delay: 2.5s">🎉</div>
+    <div class="emoji" style="left: 80%; animation-delay: 0.5s">✨</div>
+  </body>
+</html>
